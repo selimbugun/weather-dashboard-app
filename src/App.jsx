@@ -1,8 +1,12 @@
+import Dashboard from "./components/Dashboard";
+
+import "./index.css";
+
 function App() {
   return (
-    <>
-      <h1>Welcome to the React App</h1>
-    </>
+    <div className="md:m-4 md:p-8">
+      <Dashboard />
+    </div>
   );
 }
 
