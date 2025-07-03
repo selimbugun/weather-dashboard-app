@@ -4,7 +4,7 @@ import "./index.css";
 
 function App() {
   return (
-    <div className="md:m-4 md:p-8">
+    <div className="md:p-2">
       <Dashboard />
     </div>
   );

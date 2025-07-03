@@ -1,12 +1,13 @@
 import WeatherCalendar from "./WeatherCalendar";
 import Navbar from "./Navbar";
-import ChanceOfRain from "./ChanceOfRain";
+import Overview from "./Overview";
 
 export default function Dashboard() {
   return (
-    <div className="max-w-[1400px] mx-auto max-h-screen bg-[#111015]">
+    <div className="max-w-screen-xl mx-auto px-4">
       <Navbar />
       <WeatherCalendar />
+      <Overview />
     </div>
   );
 }
