@@ -22,18 +22,21 @@ export default function WeatherCalendar() {
           </div>
         </div>
         {/* WEATHER CALENDAR */}
-        <div className="w-full grid grid-cols-8 gap-2">
+        <div className="grid grid-cols-8 gap-2 ">
           {/* First Card*/}
-          <div className="col-span-2 flex flex-col items-center bg-[#BBD7EC] rounded-3xl">
-            <div className="flex flex-row justify-between w-full bg-[#AECADF] rounded-t-3xl p-3">
+          <div className="col-span-2 flex flex-col items-center bg-[#BBD7EC] rounded-3xl h-[32vh]">
+            <div className="flex flex-row justify-between w-full bg-[#AECADF] rounded-t-3xl p-2">
               <p className="text-black font-bold">Friday</p>
               <p className="text-black font-bold">11:45 AM</p>
             </div>
 
-            <div className="w-full flex flex-col items-center justify-between rounded-4xl p-2">
+            <div className="w-full flex flex-col items-center justify-between rounded-3xl p-2">
               <div className="w-full flex flex-row items-center justify-between py-1 px-3">
-                <p className="text-black text-3xl font-bold">25°C</p>
-                <img src="/images/sunny.png" className="w-20 h-auto" />
+                <p className="text-black text-xl font-bold">25°C</p>
+                <img
+                  src="/src/assets/icons/weather-icons/yellow-weather-icon.svg"
+                  className="w-12 h-auto"
+                />
               </div>
               <div className="w-full grid grid-cols-2 gap-2">
                 {/* Sol tarafta ilk 4 öğe */}
@@ -65,46 +68,70 @@ export default function WeatherCalendar() {
             </div>
           </div>
           {/* The Rest of the Cards*/}
-          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl ">
-            <div className="border-b-1 border-[#1B1B1D] text-center p-2 w-full">
+          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl max-w-[100px] ml-2">
+            <div className="border-b border-[#1B1B1D] text-center p-2 w-full">
               <p>SAT</p>
             </div>
-            <img src="/images/sun.png" alt="sunny" className="w-15  h-auto" />
+            <img
+              src="/src/assets/icons/weather-icons/rain1.svg"
+              alt="rain"
+              className="w-16  h-auto"
+            />
             <p className="font-bold mb-5">18°C</p>
           </div>
-          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl">
-            <div className="border-b-1 border-[#1B1B1D] text-center p-2 w-full ">
+          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl max-w-[100px]">
+            <div className="border-b border-[#1B1B1D] text-center p-2 w-full ">
               <p>SUN</p>
             </div>
-            <img src="/images/sun.png" alt="sunny" className="w-15  h-auto" />
+            <img
+              src="src/assets/icons/weather-icons/rain2.svg"
+              alt="rain"
+              className="w-16  h-auto"
+            />
             <p className="font-bold mb-5">15°C</p>
           </div>
-          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl">
-            <div className="border-b-1 border-[#1B1B1D] text-center p-2 w-full ">
+          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl max-w-[100px]">
+            <div className="border-b border-[#1B1B1D] text-center p-2 w-full ">
               <p>MON</p>
             </div>
-            <img src="/images/sun.png" alt="sunny" className="w-15  h-auto" />
+            <img
+              src="src/assets/icons/weather-icons/cloud.svg"
+              alt="cloud"
+              className="w-16  h-auto"
+            />
             <p className="font-bold mb-5">25°C</p>
           </div>
-          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl">
-            <div className="border-b-1 border-[#1B1B1D] text-center p-2 w-full ">
+          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl max-w-[100px]">
+            <div className="border-b border-[#1B1B1D] text-center p-2 w-full ">
               <p>TUE</p>
             </div>
-            <img src="/images/sun.png" alt="sunny" className="w-15  h-auto" />
+            <img
+              src="src/assets/icons/weather-icons/rain3.svg"
+              alt="rain"
+              className="w-16  h-auto"
+            />
             <p className="font-bold mb-5">15°C</p>
           </div>
-          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl">
-            <div className="border-b-1 border-[#1B1B1D] text-center p-2 w-full ">
+          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl max-w-[100px]">
+            <div className="border-b border-[#1B1B1D] text-center p-2 w-full ">
               <p>WED</p>
             </div>
-            <img src="/images/sun.png" alt="sunny" className="w-15  h-auto" />
+            <img
+              src="src/assets/icons/weather-icons/rain4.svg"
+              alt="rain"
+              className="w-16  h-auto"
+            />
             <p className="font-bold mb-5">15°C</p>
           </div>
-          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl">
-            <div className="border-b-1 border-[#1B1B1D] text-center p-2 w-full ">
+          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl max-w-[100px]">
+            <div className="border-b border-[#1B1B1D] text-center p-2 w-full ">
               <p>THU</p>
             </div>
-            <img src="/images/sun.png" alt="sunny" className="w-15  h-auto" />
+            <img
+              src="src/assets/icons/weather-icons/wind.svg"
+              alt="wind"
+              className="w-16  h-auto"
+            />
             <p className="font-bold mb-5">19°C</p>
           </div>
         </div>
