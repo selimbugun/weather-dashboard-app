@@ -1,12 +1,34 @@
-# React + Vite
+# ⛅ Weather Dashboard - Figma UI Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, aşağıdaki Figma tasarımının klonlanması amacıyla React ve Tailwind CSS kullanılarak geliştirilmiştir:
 
-Currently, two official plugins are available:
+🎨 [Figma Tasarımı](https://www.figma.com/design/evrkr5lWBgVaou377PFyx4/Weather-Dashboard--Community-?node-id=0-1&p=f&t=4WBw7Pakd7hDbkCE-0)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> Proje yalnızca görsel klonlamayı amaçlamaktadır. Şu an için **veri çekme, API bağlantısı veya interaktif işlevler** bulunmamaktadır.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Kullanılan Teknolojiler
+
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+---
+
+## 📸 Ekran Görüntüsü
+
+> ![image](https://github.com/user-attachments/assets/20029dc2-dc45-4149-8ac1-6ee52d4c5a3f)
+
+---
+
+
+🎯 Amaç
+Bu proje, Figma'dan birebir tasarım klonlama pratiği yapma ve UI/UX detaylarına odaklanma amacı taşımaktadır.
+
+📌 Notlar
+Bu bir statik klon çalışmasıdır.
+
+Yakın gelecekte OpenWeatherMap API gibi servisler entegre edilerek dinamik hale getirilmesi planlanmaktadır.
+
+Made with ❤️ using React and Tailwind
