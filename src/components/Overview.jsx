@@ -4,16 +4,16 @@ export default function Overview() {
       <div className="text-white">
         <div className="flex flew-row justify-between mx-3 mb-2">
           <p>Today's Overview</p>
-          <div className="flex flex-row items-center justify-between w-[22%]">
+          <div className="hidden lg:flex flex-row items-center justify-between  lg:w-[22%]">
             <p>Other Cities</p>
             <p>See All</p>
           </div>
         </div>
       </div>
-      <div className="flex flex-row items-center justify-between text-white">
-        <div className="grid grid-cols-6 grid-rows-2 gap-6 text-white h-[65vh] md:w-[75%]">
+      <div className="flex flex-col lg:flex-row items-center justify-between text-white">
+        <div className="flex flex-col  lg:grid lg:grid-cols-6 grid-rows-2 gap-6 text-white lg:h-[62vh] lg:w-[75%]">
           {/*Wind Status */}
-          <div className="flex flex-col justify-between bg-[#252525] rounded-3xl p-4 col-span-2 row-span-1">
+          <div className="flex flex-col justify-between bg-[#252525] rounded-3xl p-4  lg:col-span-2 lg:row-span-1">
             <p>Wind Status</p>
             <img
               src="src/assets/icons/wind-status.svg"
@@ -32,7 +32,7 @@ export default function Overview() {
 
           {/*UV INDEX */}
 
-          <div className="flex flex-col justify-between bg-[#252525] rounded-3xl p-4 col-span-2 row-span-1">
+          <div className="flex flex-col justify-between bg-[#252525] rounded-3xl p-4 lg:col-span-2 lg:row-span-1">
             <p>Uv Index</p>
             <img
               src="src/assets/icons/uv-index.svg"
@@ -51,7 +51,7 @@ export default function Overview() {
 
           {/*HUMIDITY */}
 
-          <div className="flex flex-col justify-between bg-[#252525] rounded-3xl p-4 col-span-2 row-span-1 -row-end-1">
+          <div className="flex flex-col justify-between bg-[#252525] rounded-3xl p-4 lg:col-span-2 lg:row-span-1 lg:-row-end-1">
             <p>Humidity</p>
             <img
               src="src/assets/icons/humidity.svg"
@@ -69,7 +69,7 @@ export default function Overview() {
           {/*HUMIDITY END */}
           {/*VISIBILITY */}
 
-          <div className="flex flex-col justify-between bg-[#252525] rounded-3xl p-4 col-span-2 row-span-1 -row-end-1">
+          <div className="flex flex-col justify-between bg-[#252525] rounded-3xl p-4 lg:col-span-2 lg:row-span-1 lg:-row-end-1">
             <p>Visibility</p>
             <img
               src="src/assets/icons/visibility.svg"
@@ -88,7 +88,7 @@ export default function Overview() {
           </div>
 
           {/*VISIBILITY END */}
-          <div className="col-span-2 row-span-3">
+          <div className="lg:col-span-2 lg:row-span-3">
             <img
               src="/images/poster.svg"
               alt="poster"
@@ -97,7 +97,7 @@ export default function Overview() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-3 justify-between h-[65vh] md:w-[25%]">
+        <div className="flex flex-col items-center gap-3 justify-evenly lg:h-[65vh] lg:w-[25%] w-full">
           {/* Beijing*/}
           <div className="flex flex-row justify-between w-[90%] ml-2 p-1 items-center bg-[#1B1B1D] rounded-3xl">
             <div className="ml-3">

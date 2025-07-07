@@ -1,11 +1,11 @@
 import ChangeOfRain from "./ChanceOfRain";
 export default function WeatherCalendar() {
   return (
-    <div className="flex flex-row justify-between mx-3">
+    <div className="flex flex-col lg:flex-row justify-between mx-3">
       <div className="bg-[#111015] text-white flex flex-col items-center justify-center py-4">
         {/* DAY SELECTOR */}
-        <div className="w-full flex flex-row items-center justify-between mb-4">
-          <div className="w-full flex flex-row items-center justify-start gap-4">
+        <div className="w-full flex flex-row items-center justify-center lg:justify-between mb-4">
+          <div className="w-full flex flex-row items-center justify-start gap-2 lg:gap-4">
             <p className="text-gray-400">Today</p>
             <p className="text-gray-400">Tomorrow</p>
             <p>Next 7 Days</p>
@@ -22,9 +22,9 @@ export default function WeatherCalendar() {
           </div>
         </div>
         {/* WEATHER CALENDAR */}
-        <div className="grid grid-cols-8 gap-2 ">
+        <div className="grid grid-cols-2 lg:grid-cols-8 gap-2 w-full">
           {/* First Card*/}
-          <div className="col-span-2 flex flex-col items-center bg-[#BBD7EC] rounded-3xl h-[32vh]">
+          <div className="col-span-2 flex flex-col   items-center bg-[#BBD7EC] rounded-3xl lg:h-auto">
             <div className="flex flex-row justify-between w-full bg-[#AECADF] rounded-t-3xl p-2">
               <p className="text-black font-bold">Friday</p>
               <p className="text-black font-bold">11:45 AM</p>
@@ -68,7 +68,7 @@ export default function WeatherCalendar() {
             </div>
           </div>
           {/* The Rest of the Cards*/}
-          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl max-w-[100px] ml-2">
+          <div className="bg-[#252525] flex flex-col items-center justify-between rounded-3xl lg:max-w-[100px] lg:ml-1">
             <div className="border-b border-[#1B1B1D] text-center p-2 w-full">
               <p>SAT</p>
             </div>
@@ -79,7 +79,7 @@ export default function WeatherCalendar() {
             />
             <p className="font-bold mb-5">18°C</p>
           </div>
-          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl max-w-[100px]">
+          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl lg:max-w-[100px]">
             <div className="border-b border-[#1B1B1D] text-center p-2 w-full ">
               <p>SUN</p>
             </div>
@@ -90,7 +90,7 @@ export default function WeatherCalendar() {
             />
             <p className="font-bold mb-5">15°C</p>
           </div>
-          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl max-w-[100px]">
+          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl lg:max-w-[100px]">
             <div className="border-b border-[#1B1B1D] text-center p-2 w-full ">
               <p>MON</p>
             </div>
@@ -101,7 +101,7 @@ export default function WeatherCalendar() {
             />
             <p className="font-bold mb-5">25°C</p>
           </div>
-          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl max-w-[100px]">
+          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl lg:max-w-[100px]">
             <div className="border-b border-[#1B1B1D] text-center p-2 w-full ">
               <p>TUE</p>
             </div>
@@ -112,7 +112,7 @@ export default function WeatherCalendar() {
             />
             <p className="font-bold mb-5">15°C</p>
           </div>
-          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl max-w-[100px]">
+          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl lg:max-w-[100px]">
             <div className="border-b border-[#1B1B1D] text-center p-2 w-full ">
               <p>WED</p>
             </div>
@@ -123,7 +123,7 @@ export default function WeatherCalendar() {
             />
             <p className="font-bold mb-5">15°C</p>
           </div>
-          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl max-w-[100px]">
+          <div className="bg-[#252525]  flex flex-col items-center justify-between rounded-3xl lg:max-w-[100px]">
             <div className="border-b border-[#1B1B1D] text-center p-2 w-full ">
               <p>THU</p>
             </div>

@@ -74,6 +74,5 @@ input:checked + .slider:before {
 .max-w-screen-xl {
   background-color: #111015;
   max-width: 1400px;
-
   margin: 0 auto;
 }

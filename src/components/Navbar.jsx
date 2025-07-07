@@ -3,13 +3,13 @@ import { MdLocationPin } from "react-icons/md";
 import { FiMenu } from "react-icons/fi";
 export default function Navbar() {
   return (
-    <nav className="bg-[#111015] text-white px-4 py-2 flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0 shadow-md rounded-t-2xl">
+    <nav className="bg-[#111015] text-white px-4 py-2 flex flex-row items-center justify-between gap-2  shadow-md rounded-t-2xl">
       {/* Sol Kısım */}
-      <div className="flex items-center gap-4 w-full sm:w-auto justify-between sm:justify-start">
+      <div className="flex items-center gap-4 w-auto justify-between">
         <div className="text-white bg-gray-800 py-2 px-2 rounded-full">
           <FiMenu />
         </div>
-        <div className="text-white bg-gray-800 py-2 px-2 rounded-full">
+        <div className="hidden md:block text-white bg-gray-800 py-2 px-2 rounded-full ">
           <FaBell />
         </div>
 
@@ -21,16 +21,16 @@ export default function Navbar() {
       </div>
 
       {/* Arama Kısmı */}
-      <div className="w-full sm:w-auto flex justify-center sm:ml-10">
+      <div className="w-auto flex justify-center">
         <input
           type="text"
           placeholder="Search City"
-          className="lg:w-xl sm:w-auto bg-gray-800 text-white text-sm px-2 py-1 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="lg:w-xl  bg-gray-800 text-white text-sm px-2 py-1 rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
 
       {/* Avatar */}
-      <div className="flex items-center justify-center sm:justify-end w-full sm:w-auto">
+      <div className="hidden md:flex items-center justify-center w-auto">
         <div className="mx-8">
           <label className="switch">
             <input type="checkbox" />
